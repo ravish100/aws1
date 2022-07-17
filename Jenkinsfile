@@ -9,11 +9,7 @@ pipeline {
                bat 'mvn clean install'
             }
         }
-        stage('Package') {
-            steps {
-               bat 'mvn package'
-            }
-        } 
+       
          stage('Run') {
             steps {
                 dir ("C:\\Users\\Administrator\\.jenkins\\workspace\\Anand1\\target"){
