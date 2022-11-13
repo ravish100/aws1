@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven "maven-3.8.6"
+        maven "maven-3.6.3"
     }
     stages {
         stage('Clean and Install') {
@@ -12,7 +12,7 @@ pipeline {
        
          stage('Run') {
             steps {
-                dir ("C:\\Users\\Administrator\\.jenkins\\workspace\\Anand1\\target"){
+                dir ("https://github.com/ravish100/aws1/tree/master/target"){
                bat 'java -jar demo-0.0.1-SNAPSHOT.jar'
                     
                 }
